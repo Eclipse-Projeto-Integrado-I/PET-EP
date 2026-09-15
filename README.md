@@ -13,7 +13,6 @@ Sistema de Gamificação Automatizado para o Programa de Educação Tutorial da 
 
 </div>
 
----
 
 ## 📑 Índice
  
@@ -23,7 +22,6 @@ Sistema de Gamificação Automatizado para o Programa de Educação Tutorial da 
 - [Licença](#-licença)
 - [Requisitos Funcionais](#-requisitos-funcionais)
 
----
 
 ## 📋 Sobre
  
@@ -33,7 +31,6 @@ Atualmente, o controle de pontos do grupo é feito de forma manual e descentrali
  
 O sistema resolve esse problema centralizando as tabelas de equivalência de pontos em um banco de dados único, permitindo que coordenadores registrem tarefas realizadas de forma rápida e simples. Com isso, o sistema calcula automaticamente as pontuações, atualiza o extrato individual de cada membro, envia notificações em tempo real e mantém um **Painel de Líderes (Leaderboard)** sempre atualizado, aumentando o engajamento e a transparência no processo de gamificação do grupo.
 
----
 
 ## 👥 Equipe
  
@@ -46,24 +43,23 @@ O sistema resolve esse problema centralizando as tabelas de equivalência de pon
 | Davi Vasconcelos Viana | UX/UI Designer |
 | Danilo Everton Vaz de Sousa | QA / Testes |
  
----
 
 ## 🛠 Tecnologias
- 
-**Frontend**
+
+**Frontend / Fullstack**
+- Next.js 14
 - React 18
 - TailwindCSS
 
 **Backend, Banco de Dados e Autenticação**
-- Firebase
-  - **Firestore** — banco de dados NoSQL em tempo real (armazenamento de membros, atividades, pontuações e semestres)
-  - **Firebase Authentication** — autenticação de coordenadores e membros
-  - **Cloud Functions** — lógica de servidor (cálculo de pontos, envio de notificações, regras de negócio)
- 
-**Infraestrutura**
-- Firebase Hosting
+- Supabase
+  - **PostgreSQL** — banco de dados relacional (armazenamento de membros, atividades, pontuações e semestres)
+  - **Supabase Auth** — autenticação de coordenadores e membros
+  - **Edge Functions** — lógica de servidor (cálculo de pontos, envio de notificações, regras de negócio)
+  - **Realtime** — atualização em tempo real do Painel de Líderes
 
----
+**Infraestrutura**
+- Vercel (hospedagem da aplicação Next.js)
 
 ## 📄 Licença
  
@@ -71,7 +67,6 @@ Este projeto está licenciado sob os termos da **GNU General Public License v3.0
  
 Consulte o arquivo [LICENSE](LICENSE) para mais detalhes.
  
----
 
 ## ✅ Requisitos Funcionais
  
